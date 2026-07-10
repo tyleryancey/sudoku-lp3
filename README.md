@@ -8,6 +8,22 @@ testing on a real **Light Phone 3**.
 > this as an *unverified* app and will show a privacy/performance warning. Install at your
 > own discretion. The Sudoku game itself is fully local: **no network, no permissions.**
 
+## Latest update — 2026-07-10
+
+The `v1.0` download was **rebuilt** from on-device review of the previous sideload. Four
+fixes, all verified against the Light Phone 3 panel:
+
+- **Much larger board** — the grid was rendering as a tiny thumbnail on the LP3's short,
+  near-square panel; the controls were compacted so the board grows ~2×.
+- **Auto candidate mode no longer disables input** — the Normal/Candidate switcher and
+  number keys stay usable with auto on, and manual pencil edits are kept as a separate
+  layer from the auto-filled candidates.
+- **Condensed settings** — the options sheet fits in roughly one screen instead of three.
+- **"Past puzzles" visible on the home screen** without scrolling.
+
+> The app version is unchanged (1.0 / versionCode 1); the same signature means it installs
+> straight over the previous build. Just re-download and reinstall.
+
 ## Install on the Light Phone 3
 
 1. Open this page in **Chrome on your LP3** → go to **[Releases](../../releases/latest)**
@@ -37,7 +53,7 @@ testing on a real **Light Phone 3**.
 | serverPackage | `com.lightos` (real LP3 LightOS) |
 | minSdk / targetSdk | 33 / 36 |
 | Signed with | Light SDK dev key (`lightsdk-dev`), APK Signature Scheme v3 |
-| SHA-256 | `9a0bf84983d49b00421226ee674d0c383d07ee187c79f64133d55ba51d7d7be2` |
+| SHA-256 | `b559206469f3875e8a5953f9e40faa215291e957fb45ac7f530380e898c14326` |
 
-Built from the private `sudoku-port` branch of the Light SDK. This repo hosts only the
-compiled APK for convenient on-device download.
+Built from the private `sudoku-port` branch of the Light SDK (commit `c133c11`, 2026-07-10).
+This repo hosts only the compiled APK for convenient on-device download.
